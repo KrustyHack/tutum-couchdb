@@ -1,0 +1,7 @@
+couchdb:
+  restart: on-failure
+  image: klaemo/couchdb:latest
+  ports:
+    - 5984:5984
+  volumes:
+    - /home/docker/couchdb:/usr/local/var/lib/couchdb
